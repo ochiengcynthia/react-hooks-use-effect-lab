@@ -17,6 +17,11 @@ function App() {
     if (correct) {
       setScore((score) => score + 1);
     }
+    if (timeRemaining === 0) {
+      setTimeRemaining(10);
+      onAnswered(false);
+    }
+    
   }
 
   return (
